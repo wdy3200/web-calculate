@@ -1,0 +1,17 @@
+<!--logs.wxml-->
+<view class="container log-list">
+<!--题目数量   参与算式的数（2、3）  算式符号类型  数值大小   分数  做题时间-->
+  <view class="log-item" wx:if="{{!isRecordNull}}">
+      <text class="log-index">分数</text>
+      <text class="time">完成时间</text>
+  </view>
+  <block wx:for="{{record}}" wx:key="rec" wx:if="{{!isRecordNull}}">
+    <view class="log-item">
+      <text class="log-index">{{index+1}}. {{item.scores}}分</text>
+      <text class="time">{{item.time}}</text>
+    </view>
+  </block>
+  <view class="null-import" wx:if="{{isRecordNull}}">
+    <text>暂无记录</text>
+  </view>
+</view>

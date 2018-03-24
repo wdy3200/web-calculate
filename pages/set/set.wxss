@@ -1,0 +1,25 @@
+/* pages/set/set.wxss */
+.container{
+  padding: 20pt 0;
+}
+.set-type{
+  margin-top: 10pt;
+}
+.section__title{
+  line-height: 20pt;
+  font-size: 13pt;
+}
+.section-option{
+  color: #ff0000;
+}
+.set-type{
+  font-size: 12pt;
+}
+.btn-area{
+  margin-top: 40pt;
+}
+.email{
+  font-size: 10pt;
+  position: absolute;
+  bottom: 5px;
+}

@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <text wx:if="{{!hasUserInfo && canIUse}}">算一算</text>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="import-text">
+    <text>测一测你的算数还有多少电量</text>
+  </view>
+  <view class="btn-area" bindtap="bindFocus">
+    <text> 每日一练</text>
+  </view>
+</view>

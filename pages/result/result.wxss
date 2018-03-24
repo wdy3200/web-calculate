@@ -1,0 +1,19 @@
+/* pages/result/result.wxss */
+.game-result{
+  font-size: 20pt;
+  line-height: 40pt;
+}
+.result-text{
+  margin-top:20pt;
+}
+.btn-area{
+  width: 99%;
+  height: 47pt;
+  margin-top: 150px;
+  line-height: 47pt;
+  text-align: center;
+  border-radius: 5pt;
+  background: #09bb07;
+  color: #fff;
+  font-size: 18pt;
+}

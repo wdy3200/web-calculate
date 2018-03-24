@@ -1,0 +1,8 @@
+<!--pages/result/result.wxml-->
+<view class="container">
+  <text class="game-result">{{gameResult}}分</text>
+  <text class="result-text">{{resultImport}}</text>
+  <view class="btn-area" bindtap="bindFocus">
+   <text>再来一局</text>
+  </view>
+</view>

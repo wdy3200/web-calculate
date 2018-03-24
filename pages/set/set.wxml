@@ -1,0 +1,43 @@
+<!--pages/set/set.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="set-type">
+      <text class="section__title"><text class='section-option'>*</text>数值：</text>
+      <radio-group name="num" bindchange="radioChange">
+        <label class="radio" wx:key="num" wx:for="{{numerical}}">
+          <radio value="{{item.size}}" checked="{{item.check}}"/>{{item.text}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="set-type">
+      <text class="section__title"><text class='section-option'>*</text>运算法则：</text>
+      <checkbox-group name="algo" bindchange='bindCheckboxChange'>
+        <label class="checkbox" wx:key="algo" wx:for="{{algorithm}}">
+          <checkbox value="{{item.rule}}" checked="{{item.check}}"/>{{item.text}}
+        </label>
+      </checkbox-group>
+    </view>
+    <view class="set-type">
+      <text class="section__title"><text class='section-option'>*</text>参与运算的数：</text>
+      <radio-group name="numCon" bindchange="radioNumConChange">
+        <label class="radio" wx:key="numCon" wx:for="{{numberCount}}">
+          <radio value="{{item.num}}" checked="{{item.check}}"/>{{item.text}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="set-type">
+      <text class="section__title"><text class='section-option'>*</text>题目数量：</text>
+      <picker name="con" bindchange='bindPickerChange' value="{{index}}" range="{{count}}">
+        <view class="picker">
+        已选择{{count[index]?count[index]:10}}道题
+        </view>
+      </picker>
+    </view>
+    <view class="btn-area">
+      <button formType="submit">保存</button>
+    </view>
+  </form>
+  <view class="email">
+      <text>邮箱:dy1213200@163.com</text>
+    </view>
+</view>

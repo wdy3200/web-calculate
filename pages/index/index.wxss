@@ -1,0 +1,32 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.import-text{
+  font-size: 12pt;
+  margin-top: 50pt;
+}
+.btn-area{
+  width: 99%;
+  height: 47pt;
+  margin-top: 40px;
+  line-height: 47pt;
+  text-align: center;
+  border-radius: 5pt;
+  background: #09bb07;
+  color: #fff;
+  font-size: 18pt;
+}
